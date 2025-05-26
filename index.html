@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="libs/css/style.css">
+</head>
+<body>
+
+    <h2>Emmanuel's API Application</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>API name</th>
+                <th>API description</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1. timezone</td>
+                <td>
+                    Latitude: <input type="text" id="lat" placeholder="e.g. 48.8566">
+                    Longitude: <input type="text" id="lng" placeholder="e.g. 2.3522">
+                </td>
+                <td><button id="btnTimezone">Submit</button></td>
+            </tr>
+
+            <tr>
+                <td>Postal Code Lookup</td>
+                <td>
+                    Postal Code: <input type="text" id="postalCode" placeholder="e.g. 10001">
+                    Country Code: <input type="text" id="country" placeholder="e.g. US">
+                </td>
+                <td><button id="btnPostalCode">Submit</button></td>
+            </tr>
+
+
+
+            <tr>
+                <td>3. neighbours</td>
+                <td>
+                    Country Code: <input type="text" id="neighbourCode" placeholder="e.g. FR">
+                </td>
+                <td><button id="btnNeighbours">Submit</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" id="opt">
+                    <strong>RESULTS</strong>
+                    <div id="output"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="libs/js/jquery-2.2.3.min.js"></script>
+    <script src="libs/js/script.js"></script>
+
+</body>
+</html>
